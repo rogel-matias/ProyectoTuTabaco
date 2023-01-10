@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import { NavBar } from './components/navbar/NavBar'
-import { Footer } from './components/footer/Footer'
+import NavBar from './components/navbar/NavBar'
+import Footer from './components/footer/Footer'
 import { ItemListContainer } from './components/market/ItemListContainer';
 import { ItemDetailContainer } from './components/market/ItemDetailContainer';
 import { Routes, Route} from "react-router-dom"
