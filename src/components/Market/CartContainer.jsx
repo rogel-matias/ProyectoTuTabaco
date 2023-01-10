@@ -5,7 +5,7 @@ import { useCartContext } from "../../context/cartContext";
 import { Cart } from "./Cart";
 import { CartEmpty } from "./CartEmpty";
 
-export const CartContainer = ( {} ) => {
+export const CartContainer = () => {
 
   const [total, setTotal] = useState();
 
@@ -15,7 +15,7 @@ export const CartContainer = ( {} ) => {
 
       setTotal(totalPrice());
       
-  },[cart])
+  },[totalPrice])
 
 
   return (

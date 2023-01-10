@@ -26,7 +26,7 @@ const Footer = () => {
                 </a>
             </nav>
         </div>
-        <a target="_blank" href="https://icons8.com/icon/8818/facebook">Facebook</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/8818/facebook">Facebook</a> icon by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a>
     </div>
   )
 }   
