@@ -98,7 +98,7 @@ export const FormOrder = () => {
 
 
     const condition = () => {
-        return emailRef.current.value == emailRef2.current.value && numberRef.current.value.length > 8
+        return emailRef.current.value === emailRef2.current.value && numberRef.current.value.length > 8
     } 
 
 
