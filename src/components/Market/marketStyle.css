@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@500&family=Rowdies&display=swap');
+
+.text-poppins {
+    font-family: poppins,sans-serif;
+}
+
+.text-roboto {
+    font-family: roboto,sans-serif;
+}
+
+.backDetail {
+    background-image: url("../../assets/backgrounds/fondoDetail.jpg");
+}
+
+.backCart {
+    background-image: url("../../assets/backgrounds/fondoCart.jpg");    
+    background-size: cover;
+}
+
+.backOrder{
+    background-image: url("../../assets/backgrounds/fondoOrder.jpg");    
+}

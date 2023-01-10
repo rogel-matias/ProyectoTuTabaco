@@ -1,8 +1,8 @@
 import { ItemDetail } from "./ItemDetail"
-import BBDD from "../Stock"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { Loader } from "../Loader"
+import { doc, getDoc, getFirestore } from "firebase/firestore"
 
 export const ItemDetailContainer = () => {
 
@@ -10,28 +10,35 @@ export const ItemDetailContainer = () => {
     const { id } = useParams()
 
     const [product, setProduct] = useState()
-
-    const getProduct = () => new Promise ((resolve, reject) =>{
-        setTimeout(() => resolve(BBDD.find( prod => prod.id === id )), 2000)
-    })
-
-    useEffect( () => {
-        getProduct()
-          .then(response => setProduct(response))
-          .catch(error => console.log(error))
-    }, [getProduct()])
-    
     console.log(product)
+
+
+    const getProduct = () => {
+
+        const db = getFirestore();
+        const docRef = doc(db, 'items', id);
+
+        getDoc(docRef).then( snapshot => {
+            setProduct( {id: snapshot.id, ...snapshot.data()})
+        })
+    }
+
     
+    useEffect( () => {
+
+      getProduct()
+      
+    }, [])
+
+
 
   return (
     <>
       {
         product
-        ?
-        <ItemDetail product={product}/>
-        :
-        <Loader />
+        
+        ? <ItemDetail product={product}/>
+        : <Loader />
       }
     </>
   )

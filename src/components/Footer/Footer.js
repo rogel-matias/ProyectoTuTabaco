@@ -5,13 +5,13 @@ import iconWhatsapp from "../../assets/icons/whatsapp.png"
 
 const Footer = () => {
   return (
-    <div className="flex flex-col justify-around py-16 bg-base-100 sm:flex-row">
+    <div className="flex flex-col items-center gap-y-20 py-16 bg-teal-700 text-white">
         <div>
-            <p><strong>Diseño y desarrollo - Matías Rogel</strong></p>
+            <p className="text-xl mb-4"><strong>Diseño y desarrollo - Matías Rogel</strong></p>
             <p><strong>Copyright © 2022</strong></p>
         </div>
         <div className="sm:mt-0 mt-8">
-            <nav className="flex flex-row gap-x-4">
+            <nav className="bg-teal-700 flex flex-row gap-x-4">
                 <a href=" ">
                   <img src={iconInstagram} alt="Red Social"/>
                 </a>
@@ -26,6 +26,7 @@ const Footer = () => {
                 </a>
             </nav>
         </div>
+        <a target="_blank" href="https://icons8.com/icon/8818/facebook">Facebook</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     </div>
   )
 }

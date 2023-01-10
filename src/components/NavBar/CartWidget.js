@@ -1,24 +1,27 @@
+import { useEffect, useState } from "react";
+import { useCartContext } from "../../context/cartContext"
 import { CartSvg } from "./CartSvg"
 
+
 const CartWidget = () => {
+
+    const [ count, setCount] = useState();
+
+    const { cart, countWidget } = useCartContext();
+
+    useEffect( ()=>{
+        setCount(countWidget())
+    }, [cart])
+
   return (
     <div className="flex-none pr-6">
         <div className="dropdown dropdown-end">
-            <label tabIndex={0} className="btn btn-ghost btn-circle">
+            <label className="btn btn-ghost btn-circle box-border mr-5">
                 <div className="indicator">
                     <CartSvg />
-                    <span className="badge badge-sm indicator-item">8</span>
+                    <span className="badge badge-sm indicator-item text-xl p-3">{count && count}</span>
                 </div>
             </label>
-            <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
-                <div className="card-body">
-                    <span className="font-bold text-lg">8 Items</span>
-                    <span className="text-info">Subtotal: $999</span>
-                    <div className="card-actions">
-                        <button className="btn btn-primary btn-block">View cart</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
   )
