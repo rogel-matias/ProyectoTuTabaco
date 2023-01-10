@@ -15,7 +15,7 @@ export const ItemDetail = ( {product} ) => {
             <div className="flex flex-col justify-evenly items-center content-around basis-1/3 mx-5">
                 <h2 className="card-title text-3xl pt-8 text-poppins">{product.title}</h2>
                 <div className="max-h-[300px] overflow-auto">
-                    <p className="xl:text-xl p-2 sm:p-8 text-justify text-roboto">{product.description && product.description}</p>        
+                    <p className="xl:text-xl p-2 sm:p-8 text-black text-justify text-roboto">{product.description && product.description}</p>        
                 </div>
             </div>
             <div className="flex flex-col justify-center items-center basis-1/3">
