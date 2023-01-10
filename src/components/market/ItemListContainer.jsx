@@ -41,7 +41,7 @@ export const ItemListContainer = ( {greeting} ) => {
 
   return (
     <div className="pb-28 bg-zinc-50">
-        <p className="mt-40 pt-20 text-7xl font-extrabold textCatalogo bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-slate-900 text-shadow"> C A T Á L O G O </p>
+        <p className="mt-40 pt-20 text-4xl sm:text-7xl font-extrabold textCatalogo bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-slate-900 text-shadow"> C A T Á L O G O </p>
         
         {
             products.length
