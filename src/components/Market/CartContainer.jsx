@@ -26,8 +26,8 @@ export const CartContainer = ( {} ) => {
             { cart.length
               
               ?
-              
-              <div className="lg:w-9/12 xl:w-6/12 flex flex-col sm:mx-10 lg:mx-auto bg-zinc-400/60">
+                
+              <div className="lg:w-9/12 xl:w-6/12 flex flex-col sm:mx-10 lg:mx-auto bg-zinc-400/60"> 
                   { cart.map( product => <Cart key={product.id} {...product}/>) }
                    
                   <div className="flex flex-col md:flex-row justify-around gap-y-5 md:gap-y-0 mb-10 mx-2 text-3xl border-t-2 pt-14">

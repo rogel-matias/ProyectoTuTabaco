@@ -7,7 +7,7 @@ import { ItemDetailContainer } from './components/market/ItemDetailContainer';
 import { Routes, Route} from "react-router-dom"
 import { CartContainer } from './components/market/CartContainer';
 import { FormOrder } from './components/market/FormOrder';
-import './components/market/marketStyle.css'
+import './components/market/marketStyle.css'   
 
 function App() {
   return (
