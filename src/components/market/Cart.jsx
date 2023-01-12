@@ -6,7 +6,7 @@ export const Cart = ({id, title, quantity, price, pictureUrl}) => {
     const { removeToCart } = useCartContext();
 
   return (
-    <div className="flex justify-between py-5 border-t-2 ">
+    <div className="flex justify-between py-5 border-t-2">
         <div className="flex">
             <div className="ml-1 sm:ml-7 h-36 w-36">
                 <img

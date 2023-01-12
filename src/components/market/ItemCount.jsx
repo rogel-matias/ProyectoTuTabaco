@@ -34,6 +34,7 @@ export const ItemCount = ( {product, setFinish} ) => {
   return (
 
     product.stock > 0
+    
     ?   
         <div className="flex flex-col gap-y-6 m-auto">
             <div className="flex flex-row rounded border border-gray-900 gap-x-8 mx-auto bg-zinc-600 text-white">

@@ -15,21 +15,22 @@ const NavBar = () => {
         </div>
 
         <div>
-            { cart.length > 0          
+            {   cart.length > 0          
                 &&  <Link to="/cart">
                         <CartWidget/>
                     </Link>
             }
-            <div className="dropdown dropdown-bottom dropdown-end">
-                <button className="sm:mr-20 "><MenuSvg /></button>
-                <ul className="mt-14 dropdown-content shadows menu bg-teal-900 rounded-box w-56 text-white text-poppins">
-                    <li className="hover-bordered">
-                        <Link className="py-8" to="/category/tabaco">TABACOS</Link>
+
+            <div className="dropdown dropdown-end">
+                <label tabIndex={0} className=""><MenuSvg /></label>
+                <ul tabIndex={0} className="menu dropdown-content p-2 shadows bg-teal-900 text-white text-poppins sm:w-96 h-screen sm:-mr-8 mt-2 sm:-mt-24">
+                    <li>
+                        <Link className="py-8 " to="/category/tabaco">TABACOS</Link>
                     </li>
-                    <li className="hover-bordered">
+                    <li>
                         <Link className="py-8" to="/category/filtro">FILTROS</Link>
                     </li>
-                    <li className="hover-bordered">
+                    <li>
                         <Link className="py-8" to="/category/seda">SEDAS</Link>
                     </li>
                 </ul>

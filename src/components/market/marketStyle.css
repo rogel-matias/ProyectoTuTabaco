@@ -15,6 +15,7 @@
 .backCart {
     background-image: url("../../assets/backgrounds/fondoCart.jpg");    
     background-size: cover;
+    opacity: 0.90;
 }
 
 .backOrder{
